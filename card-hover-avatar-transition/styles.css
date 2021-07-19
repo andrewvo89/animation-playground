@@ -17,8 +17,7 @@ div.page-container__card {
   align-items: stretch;
   border: 1px solid black;
   border-radius: 8px;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);;
-  transition: background-color 3000ms;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 div.page-container__card:hover {
@@ -28,10 +27,6 @@ div.page-container__card:hover {
 div.page-container__card:hover img.header__avatar {
   transform: translateY(-3rem);
   background-color: rgba(0, 0, 0, 0.9);
-}
-
-div.page-container__card:hover {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 div.card__header {
