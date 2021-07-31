@@ -1,0 +1,48 @@
+div.graph {
+  display: flex;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  width: 600px;
+  height: 400px;
+  padding: 2px;
+}
+
+div.graph__vertical {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+div.graph__bar {
+  position: relative;
+  height: 0;
+  background-color: antiquewhite;
+  border: 1px solid azure;
+  transition: height 2s ease-out;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.graph__bar[emoji]::after {
+  content: attr(emoji);
+  display: block;
+  position: absolute;
+  transform: scale(0);
+  bottom: 0;
+  transition: 
+    transform ease-out 600ms,
+    bottom linear 300ms;
+  z-index: 2;
+}
+
+div.graph__bar[emoji]:hover::after {
+  transform: scale(4);
+  bottom: 100%;
+}
+
+span.bar__label {
+  opacity: 0;
+  transition: opacity 1000ms ease-out;
+}
